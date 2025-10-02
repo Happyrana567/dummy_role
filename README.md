@@ -11,6 +11,7 @@ This is a dummy Ansible role to install and start httpd service.
 ## Usage
 
 ```yaml
-- hosts: all
+- name: Test dummy_role
+  hosts: all
   roles:
-    - dummy-role
+    - dummy_role

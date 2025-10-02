@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: MIT-0
 ---
-- hosts: all
+- name: Test dummy_role
+  hosts: all
   remote_user: root
   roles:
-    - dummy-role
+    - dummy_role

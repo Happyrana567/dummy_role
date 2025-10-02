@@ -1,10 +1,10 @@
 # SPDX-License-Identifier: MIT-0
 galaxy_info:
   author: Happyrana567
-  description: Install and configure a dummy role for testing
+  description: Dummy role to install and configure httpd service
   company: none
   license: MIT
-  min_ansible_version: 2.9
+  min_ansible_version: "2.9"
 
   platforms:
     - name: EL
@@ -18,8 +18,8 @@ galaxy_info:
 
   galaxy_tags:
     - dummy
+    - httpd
     - test
-    - role
 
 dependencies: []
 

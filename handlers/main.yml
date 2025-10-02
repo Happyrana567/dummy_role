@@ -1,9 +1,7 @@
-#SPDX-License-Identifier: MIT-0
----
-# handlers file for httpd
+# SPDX-License-Identifier: MIT-0
 ---
 - name: restart httpd
-  service:
-    name: httpd
+  ansible.builtin.service:
+    name: "{{ httpd_service }}"
     state: restarted
 

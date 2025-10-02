@@ -1,20 +1,20 @@
 # SPDX-License-Identifier: MIT-0
 ---
-- name: Install httpd package
-  yum:
+- name: Install httpd package (RedHat)
+  ansible.builtin.yum:
     name: "{{ httpd_package }}"
     state: present
   when: ansible_os_family == "RedHat"
 
 - name: Install httpd package (Debian/Ubuntu)
-  apt:
+  ansible.builtin.apt:
     name: "{{ httpd_package }}"
     state: present
     update_cache: yes
   when: ansible_os_family == "Debian"
 
 - name: Start httpd service
-  service:
+  ansible.builtin.service:
     name: "{{ httpd_service }}"
     state: started
     enabled: true
