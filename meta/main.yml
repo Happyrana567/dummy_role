@@ -5,10 +5,9 @@ galaxy_info:
   description: Dummy role for learning
   company: none
   license: MIT
-  min_ansible_version: 2.9
+  min_ansible_version: "2.9"
   platforms:
     - name: EL
       versions:
         - all
 dependencies: []
-
